@@ -1,0 +1,148 @@
+.heroImg
+{
+	position: relative;	
+	width: 100%;
+	min-height: 72vh;
+
+	background-image: url(../images/highResolutionImage.png);
+	background-size: cover;
+	aspect-ratio: 16/1;
+}
+
+.mask
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 24, 24, .8);
+	
+	color: 	#ffffff;
+	font-size: var(--fs-600);
+	font-weight: 700;
+	letter-spacing: .2rem;
+
+	display: flex;
+	flex-flow: column;
+	align-items: flex-start;
+	justify-content: center;
+
+
+	overflow-y: auto;
+}
+
+.auItem
+{
+	border-bottom: .1rem solid rgba(237, 224, 221, 1);
+	width: 	40%;
+	margin: 1% 5%;
+	padding: var(--pd-400);
+	scale: 	1;
+	opacity: .9;
+
+	font-family: Black_Mango;
+	cursor: pointer;
+	transition: 300ms;
+
+	display: flex;
+	flex-flow: column;
+}
+
+
+.auItem::after
+{
+	content: "";
+
+	border-bottom: .15rem rgba(24, 24, 24, 0) solid;
+	width: 10%;
+	transition: 300ms;
+}
+
+.auItem:hover
+{
+	background: #ffffff;
+	color: #181818;
+	transform: 	translateY(-.1rem);
+	opacity: 1;
+	box-shadow: -.5rem .5rem .5rem rgba(24, 24, 24, 1.0);
+}
+
+.auItem:Hover::after
+{
+	border-bottom: .15rem rgba(24, 24, 24, 1) solid;
+	width: 80%;
+}
+
+.layoutAuItem
+{
+	position: relative;
+	width: 85%;
+	margin: auto;
+	padding: var(--pd-500);
+
+	background: rgba(237, 224, 221, 1);
+	color: rgba(24, 24, 24, .9);
+}
+
+.title
+{
+	color: rgba(24, 24, 24, 1.0);
+	font-family: Black_Mango;
+	text-align: center;
+	margin: .8rem auto;
+	padding: var(--pd-200);
+	width: 50%;
+
+	border-bottom:solid .1rem RGB(24, 24, 24);
+	border-radius: 1rem;
+}
+
+
+.normalText
+{
+	padding: var(--pd-700);
+	width: 90%;
+	margin: 3rem auto;
+	border-left: solid rgba(24, 24, 24, 1.0) .1rem;
+	border-top: solid rgba(24, 24, 24, 1.0) .1rem;
+
+	letter-spacing: 0rem;
+	font-size: var(--fs-500);
+	text-align: justify;
+	line-height: 1.6rem;
+	font-weight: 400;
+	opacity: 1;
+}
+
+.iconBox
+{
+	width: 4%;
+	text-align: center;
+}
+
+
+.iconItem
+{
+	color: rgba(24, 24, 24, 1.0);
+	cursor: pointer;
+	scale: 0.9;
+
+	transition: 300ms;
+}
+
+.iconItem:hover
+{
+	color: RGB(201, 14, 13);
+	scale: 1.1;
+}
+
+@media screen and (max-width: 1000px) 
+{
+	.auItem
+	{
+		font-size: var(--fs-500);
+		padding: var(--pd-300);
+
+	}
+
+
+}

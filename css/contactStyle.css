@@ -1,0 +1,187 @@
+.heroImgContainer
+{
+	position: relative;
+	padding: 0;
+}
+
+.heroImg
+{
+	position: relative;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 100%;
+	height: 50rem;
+	padding: 0;
+}
+
+.heading
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(24, 24, 24, .8);
+}
+
+.heading > *
+{
+	position: relative;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	margin: 0;
+	padding: var(--pd-500);
+
+	color: rgb(250, 250, 250);
+	background: rgba(24, 24, 24, 1);
+
+	border-left: solid rgba(250, 250, 250, 1.0) .1rem;
+
+	font-weight: 200;
+	text-shadow: .2rem .2rem .1rem rgba(24, 24, 24, 1);
+
+}
+
+.heading h1
+{
+	font-weight: 500;
+	letter-spacing: 1rem;
+	font-size: var(--fs-800);
+	padding: 5% 1%;
+	font-family: Black_Mango;
+}
+
+.contactBox
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-size: var(--fs-400);
+	letter-spacing: .1rem;
+}
+
+.textContact
+{
+	padding: var(--pd-300);
+	width: 40%;
+	margin: 0 1rem;
+}
+
+.labelContact
+{
+	letter-spacing: .5rem;
+	font-size: var(--fs-600);
+	background: rgb(250,250,250);
+	color: rgb(24, 24, 24);
+	text-shadow: none;
+
+	padding: var(--pd-rl-300);
+	font-weight: 400;
+}
+
+.contactData
+{
+	text-decoration: none;
+	color: rgba(237, 224, 221, 1);
+}
+
+
+.requestListBox
+{
+	position: relative;
+	width: 50%;
+	height: 100%;
+
+	background: rgba(189, 240, 203, 1.0);
+	top: 0;
+
+	left: 25%;
+}
+
+.requestLink
+{
+	width: 50%;
+	margin: 2.5% auto;  
+	border: solid green .1rem;
+
+	display: block;
+	padding: var(--pd-400);
+	text-align: center;
+	text-decoration: none;
+	color: rgb(24, 24, 24);
+	background: rgb(250, 250, 250);
+	margin: auto;
+
+	transition: 200ms;
+}
+.requestLink:hover
+{
+	letter-spacing: .2rem;
+	background: rgba(250, 250, 250, .8);
+}
+
+.notRegisterMsg
+{
+	font-family: Black_Mango;
+	letter-spacing: .3rem;
+	font-size: var(--fs-600);
+	text-align: center;
+
+	border-top: solid rgba(250, 250, 250, 1.0) .1rem;
+	border-bottom: solid rgba(250, 250, 250, 1.0) .1rem;
+	padding: var(--pd-400);
+
+	background: rgba(24, 24, 24, 1.0);
+	color: rgba(250, 250, 250, 1.0);
+
+	display: flex;
+	flex-flow: column;
+
+	margin: 0;
+}
+
+.notRegisterHyp
+{
+	text-decoration: none;
+	background: RGB(55, 110, 55);
+	color: rgb(250, 250, 250);
+
+	width: 15%;
+	margin: 1rem auto;
+
+	transition: 200ms;
+}
+
+.notRegisterHyp:hover
+{
+	background: rgba(55, 110, 55, .7);
+	letter-spacing: .4rem;
+
+}
+
+@media screen and (max-width: 1300px) 
+{
+	.textContact
+	{
+		width: 20%;
+		background: yellow;
+		flex-wrap: wrap;
+	}
+	.labelContact
+	{
+		font-size: var(--fs-400);
+	}
+
+	.contactData
+	{
+		font-size: var(--fs-300);		
+	}
+
+	.heading > *
+	{
+		left: 40%;
+		width: 60%;
+	}
+
+}

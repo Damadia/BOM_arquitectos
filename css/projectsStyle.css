@@ -1,0 +1,166 @@
+.buttonBox
+{
+	width: 80%;
+	margin: 1% auto;
+
+	display: flex;
+}
+
+.buttonProject
+{
+	width: 10%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:none;
+
+	background: rgba(24, 24, 24, 1);
+	color:rgba(237, 224, 221, 1);
+
+	transition: 300ms;
+}
+
+
+.buttonProject:hover
+{
+	background: rgba(24, 24, 24, .95);
+}
+
+.buttonProject:hover i
+{
+	color:rgb(237, 28, 68);
+}
+
+.projectsCardBox
+{
+	background: rgb(60, 73, 54 );
+	width: 80%;
+
+	display: flex;
+	overflow-x: auto;
+}
+
+.cardProject
+{
+	display: flex;
+	flex-flow: column;
+
+/*	border-radius: 3rem; */
+	overflow: hidden;
+
+	min-width: 21.33%;
+	height: 30vw;
+	width: 21%;
+	margin: 2% 6%;
+
+	border-top: rgba(237, 224, 221, 1) .1rem solid;
+	border-left: rgba(237, 224, 221, 1) .1rem solid;
+
+	transition: 200ms;
+} 
+
+.textCard
+{
+	padding: var(--pd-200);
+	color: transparent;
+	text-align: justify;
+	padding: var(--pd-400);
+
+	transition: 200ms;
+}
+
+.cardTitle
+{
+	font-family: Black_Mango;
+	letter-spacing: .4rem;
+	font-size: var(--fs-500);
+	text-align: justify;
+
+}
+
+.cardThumb
+{
+	letter-spacing: .3rem;
+	text-align: justify;
+	font-size: var(--fs-400);
+	line-height: 1.5;
+	border-bottom: solid rgb(60, 73, 54 ) .1rem;
+	padding: var(--pd-100);
+	margin-top: 1rem;
+}
+
+
+.imgCard
+{
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	width: 100%;
+	height: 90vh;
+}
+
+.cardProject:hover
+{
+	scale: .99;
+}
+
+.cardProject:hover .textCard
+{
+	color: rgb(230, 230, 230);
+	
+} 
+.cardProject:hover .cardThumb
+{
+	border-bottom: solid rgba(237, 224, 221, 1) .1rem;
+	
+}
+
+.sbtStyle
+{
+	text-align: center; 
+	background: rgba(60, 73, 54, 1);
+	letter-spacing: .4rem;
+	color: rgb(230, 230, 230);
+	
+	width: 100%;
+	margin: auto;
+	padding: var(--pd-200);
+	font-size: var(--fs-400);
+	
+	border: none; 
+
+
+	transition: 200ms;
+}
+
+.sbtStyle:hover
+{
+	letter-spacing: .5rem;
+	background: rgba(143, 163, 124, 1);
+	color: rgb(24, 24, 24);
+}
+
+.hyStyle
+{
+	font-family: Black_Mango;
+	letter-spacing: .3rem;
+	font-size: 1.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: rgba(240, 240, 240, 1.0);
+	background: RGB(225, 144, 52);
+	/*RGBA(24, 45, 24, .9) */
+	width: 75%;
+	margin: 1rem auto;
+	display: block;
+	position: relative;
+	padding: var(--pd-400);
+	border: solid .1rem black;
+
+	transition: 300ms;
+}
+
+.hyStyle:hover
+{
+	background: RGBA(227, 168, 102, 1);
+}

@@ -1,0 +1,137 @@
+.bigContainer
+{
+	position: relative;
+	height: 48rem;
+	background: rgba(237, 224, 221, 1);
+	overflow:scroll;
+    overflow-x:hidden;
+}
+
+.usersHeading
+{
+	font-family: Black_Mango;
+	letter-spacing: 1.4rem;
+	text-align: center;
+	font-size: var(--fs-900);
+	font-weight: 600;
+
+	width: 50%;
+	margin: 3rem auto;
+	padding: var(--pd-500);
+
+	color: rgb(24, 24, 24);
+	border-bottom: solid rgba(24, 24, 24, 1.0) .15rem;
+	border-radius: 10%;
+}
+
+.userContainer
+{
+	width: 90%;
+	margin: 2rem auto;
+	background: rgba(237, 224, 221, 1.0);
+
+	border-top: solid rgb(24,24,24) .1rem;
+	border-bottom: solid rgb(24,24,24) .1rem;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+.userEntrance
+{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	letter-spacing: .05rem;
+	padding: var(--pd-800);
+
+}
+
+.details
+{
+	margin: 1rem auto;
+	padding: var(--pd-400);
+	color: rgb(24, 24, 24, .8);
+	font-weight: 300;
+
+	overflow-wrap: break-word;
+	width: 100%;
+}
+
+.userAttributes
+{
+	margin: 1rem 0;
+	padding: var(--pd-400);
+
+	color: rgb(24, 24, 24, .8);
+	font-weight: 300;
+
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+}
+
+.titleAttribute
+{
+	color: rgb(24, 24, 24);
+	font-weight: 600;
+	padding: var(--pd-rl-200);
+	margin: 0 .5rem 0 0;
+}
+
+
+.userAttribute
+{
+	width: 32%;
+}
+
+.userNameTitle
+{
+	font-family: Black_Mango;
+	letter-spacing: .15rem;
+	font-size: var(--fs-700);
+	font-weight: 600-;
+
+	padding: var(--pd-500);
+	margin: 2rem 2rem 0;
+	width: 50%;
+
+	border-bottom: solid .1rem rgba(24, 24, 24, 1.0);
+	border-right: solid .1rem rgba(24, 24, 24, 1.0);
+
+	display: flex;
+	flex-flow: column;
+
+}
+
+.userEmailTitle
+{
+	font-size: var(--fs-600);
+	padding: 0;
+	margin: 1rem 0;
+	width: 50%;
+
+
+	border: none;
+
+}
+
+.options
+{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+
+	width: 90%;
+	margin: auto;
+	padding: var(--pd-400);
+	border-bottom: solid .1rem rgba(24, 24, 24, 1.0);
+
+	border-radius: 1rem;
+}
+
+.options > *
+{
+	width: 33%;
+}

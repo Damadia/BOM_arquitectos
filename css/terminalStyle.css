@@ -1,0 +1,71 @@
+.terminalBGContainer
+{
+	position: relative;
+	height: 55rem;
+	background: rgba(24, 24, 24, .85);
+}
+
+.terminalBox
+{
+	position: absolute;
+	height: 50%;
+	width: 80%;
+	margin: 10% 10%;
+	background: rgba(24, 24, 24, 1);
+	padding: var(--pd-400);
+	color: rgb(250, 250, 250);
+}
+
+
+.terminalTitle
+{
+	font-size: var(--fs-600);
+	padding: var(--pd-200);
+}
+
+.errorBox
+{
+	display: flex;
+	flex-flow: column;
+	align-items: space-between;
+	background: RGB(244, 67, 54);
+	color: RGB(255, 235, 238);
+	padding: var(--pd-rl-400);
+}
+
+.errorBox::after
+{
+	content: "";
+	margin: .5rem;
+	border-top: solid RGB(255, 235, 238) .1rem;
+}
+
+.hyperText
+{
+	display: inline-block;
+	margin: 1rem;
+	letter-spacing: .1rem;
+	padding: var(--pd-200);
+	color: rgb(250,250,250);
+	text-decoration: none;
+
+	transition: 200ms;
+}
+
+.hyperText:hover
+{
+	letter-spacing: .2rem;
+}
+
+
+.register
+{
+	background: RGB(0, 153, 88);
+
+}
+
+.logIn
+{
+	background: RGB(33, 150, 243);
+
+}

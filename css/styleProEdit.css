@@ -1,0 +1,30 @@
+.headingData
+{
+	font-size: var(--fs-800);
+	font-family: Black_Mango;
+	letter-spacing: .1rem;
+	font-style: italic;
+	font-weight: 600;
+
+	padding: var(--pd-400);
+	border-bottom: solid .2rem rgba(24, 24, 24, 1.0);
+
+
+	width: 30%;
+	margin: 2rem 0 2rem 2%;
+}
+
+.projectDataBox, .dirDataBox
+{
+	width: 90%;
+	margin: auto;
+
+	background: rgb(60, 73, 54 );
+	border: steelblue .1rem solid;
+	color: rgba(250, 250, 250, 1.0);
+} 
+.separationLine
+{
+	border: solid rgba(24, 24, 24, 1.0) .1rem;
+	margin: 2rem 0;
+}

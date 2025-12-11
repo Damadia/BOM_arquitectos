@@ -1,0 +1,400 @@
+/* Colors 
+	Dark green: 60, 73, 54 
+	Yellow: rgb(225, 144, 52)
+	Light green: 87, 129, 110
+	Light beige_1: rgb(201, 190, 170)
+	Light beige_2: 244, 227, 210
+	Dark beige: 188, 168, 143
+	Blue: 57, 90, 115 
+    White: rgb(230, 230, 230);
+	Black: rgb(24, 24, 24);
+
+*/
+
+@font-face
+{
+	font-family: Roboto_Mono;
+	src: url(../fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+
+
+@font-face
+{
+	font-family: Black_Mango;
+	src: url(../fonts/BlackMangoVariableGX.ttf);
+}
+
+:root
+{
+	/* Colors */
+	--main-color:rgb(60, 73, 54);
+
+	/*Font Size*/
+	--fs-200: .5rem;
+	--fs-300: .75rem;
+	--fs-400: 1rem;
+	--fs-500: 1.25rem;
+	--fs-600: 1.5rem;
+	--fs-700: 2rem;
+	--fs-800: 3rem;
+	--fs-900: 4rem;
+
+
+
+	/* Paddings */
+	--pd-100: .1rem;
+	--pd-200: .25rem;
+	--pd-300: .5rem;
+	--pd-400: .75rem;
+	--pd-500: 1rem;
+	--pd-600: 1.5rem;
+	--pd-700: 2rem;
+	--pd-800: 3rem;
+	--pd-900: 4rem;
+
+	--pd-rl-100: 0rem .1rem;
+	--pd-rl-200: 0rem .25rem;
+	--pd-rl-300: 0rem .5rem;
+	--pd-rl-400: 0rem .75rem;
+	--pd-rl-500: 0rem .1rem;
+
+	--pd-tp-100: .1rem 0rem;
+	--pd-tp-200: .25rem 0rem;
+	--pd-tp-300: .5rem 0rem;
+	--pd-tp-400: .75rem 0rem;
+	--pd-tp-500: .1rem 0rem;
+}	
+
+::-webkit-scrollbar
+{
+	width: 1rem;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: .5rem;
+	border: .1rem solid rgba(255, 255, 255, 1);
+	background: rgba(24, 24, 24, 1);
+}
+
+
+::-webkit-scrollbar-track
+{
+	border-radius: .5vw;
+	background: rgba(255, 255, 255, .2);
+	margin-block: .5rem;
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+	font-family: Roboto_Mono;
+}
+
+html
+{
+	font-size: 14px;
+	height: 100%;
+}
+
+body
+{
+	position:relative;
+	min-height: 100%;
+	background: rgb(230, 230, 230);
+}
+
+/* HEAD CLASSES */ 
+
+.headBox
+{
+	position: relative;
+	width: 100%;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgb(24, 24, 24);
+	padding: var(--pd-500);
+}
+
+.headElement
+{
+	padding: var(--pd-100);
+
+	display: flex;
+	align-items: center;
+}
+
+.logoBox
+{
+	width: 7%;
+	margin: .5% 5% .5% 2.5%;
+}
+
+.headElement img
+{
+	width: 100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+	margin: .1% 0%;
+	border-radius: 1rem;
+}
+
+.navBar
+{
+	justify-content: space-around;
+
+	margin: .5% 2.5% .5% 5%;
+	width: 78%;
+}
+
+.navBar .navElements /* li */
+{
+	list-style-type: none;
+	border-radius: 1rem;
+
+	border: solid .1rem rgba(237, 224, 221, 1);
+	text-align: center;
+	width: 15%;
+	
+}
+
+.logInBox /* The two log in  */
+{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: column;
+	list-style-type: none;
+	justify-content: center;
+}
+
+.logInBox .login
+{
+	text-decoration: none;
+	cursor: pointer;
+	width: 80%;
+	height: 3rem;
+	letter-spacing: .1em;
+	background: rgb(230,240,230);
+	color: rgb(24, 24, 24);
+	border-radius: 1rem;
+	margin: .5rem auto;
+	font-size: var(--fs-300);
+
+	text-align: center;
+
+	display: flex;
+	flex-flow: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+
+	transition: 300ms;
+}
+
+.logInBox .login::after
+{
+	content: "";
+	margin:auto;
+	width: 35%;
+	border-bottom: solid .15em rgb(230, 230, 230);
+
+	transition: 300ms;
+}
+
+.logInBox .login:hover
+{
+	width: 85%;
+	letter-spacing: .2rem;
+	background: white;
+	border: none;
+}
+
+.logInBox .login:hover::after
+{
+	width: 70%;
+	border-bottom: solid .15em rgb(24, 24, 24);
+}
+
+
+.navBar li a /* The links from the class navBar */
+{
+	display: flex;
+	flex-flow: column;
+
+	text-decoration: none;
+	font-size: var(--fs-400);
+	color: rgb(230, 230, 230);
+
+	padding: var(--pd-tp-300);
+	font-weight: 700;
+	border-radius: 1rem;
+
+	letter-spacing: .2rem;
+	margin: auto;
+
+	transition: 300ms;
+}
+
+.navBar a:hover
+{
+	color: rgb(24, 24, 24);
+	letter-spacing: .3rem;
+	background: #ffffff;
+}
+
+.navBar a::after
+{
+	content: "";
+	border-bottom: rgb(24, 24, 24) solid .15rem;
+	width: 30%;
+	margin: auto;
+
+	transition: 300ms;
+}
+
+.navBar a:hover::after
+{
+	content: "";
+
+	width: 90%;
+	margin: auto;
+	border-bottom: #181818 solid .15rem;
+}
+
+.userWelcome
+{
+	color: rgb(250, 250, 250);
+	width: 65%;
+	margin: .5% 2.5%;
+	font-size: var(--fs-500);
+	letter-spacing: .1rem;
+	font-style: italic;
+	font-weight: 500;
+}
+
+/* FOOT CLASSES */
+
+.footBox
+{
+	position: relative;
+	width: 100%;
+	background: rgb(24, 24, 24);
+	padding: var(--pd-500);
+	border-top: solid .1rem rgba(237, 224, 221, 1);
+}
+
+.footerElements
+{
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0% 1.5%;
+}
+
+.footItem
+{
+	margin: 0% 1%;
+	padding: var(--pd-300);	
+}
+
+.smBox
+{
+	width: 40%;
+}
+
+.listBox
+{
+	width: 30%;
+}
+
+.footItem li /* Elements of a direct 'ul' father */
+{
+	list-style: none;
+	padding: var(--pd-100);
+}
+
+.footItem li a
+{
+	display: flex;
+	flex-flow: column;
+
+	text-decoration: none;
+	font-size: var(--fs-300);
+	text-align: center;
+
+	color: rgba(237, 224, 221, 1);
+	padding: var(--pd-400);
+
+	transition: 300ms;
+}
+
+.footItem li a:hover
+{
+	letter-spacing: .01rem;
+	background: rgba(255, 255, 255);
+	color: #181818;
+}
+
+.footItem li a:after
+{
+	content: "";
+	width: 40%;
+	border-bottom: solid rgba(237, 224, 221, 1) .1rem;
+	margin: .3rem auto auto auto;
+
+	transition: 300ms;
+}
+
+.footItem li a:hover::after
+{
+	width: 90%;	
+	border-bottom: solid rgb(24, 24, 24) .1rem;
+}
+
+.smBox 
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footItem a i
+{
+	font-size: var(--fs-800);
+	color: rgba(237, 224, 221, 1);
+
+	transition: 300ms;
+}
+
+.footItem a i:hover
+{
+	font-size: 2.85rem;
+
+	color: rgba(237, 224, 221, .75);
+}
+
+@media screen and (max-width: 1000px) 
+{
+	.smBox
+	{
+		font-size: .5rem;
+		width: 45%;
+	}
+
+	.listBox
+	{
+		width: 27.5%;
+	}
+	.footItem li a
+	{
+		font-size: var(--fs-200);
+
+	}
+
+}
