@@ -1,0 +1,7 @@
+PARA HACER PRUEBAS DE LA APLICACIÓN.
+Para poder desplegar la aplicación y ver como funciona el usuario tiene que tener descargada la aplicación "XAMPP" la cual por lo general es guardada en la raíz de su disco duro.
+Ejecutar el ejecutable "XAMPP.start"
+Ejecutar el ejectutable "XAMPP´.control" e inicializar los servicios "Apache" y "MySQL"
+Para ver las pruebas de las BD, contactar con angelsvein21@gmail.com para que se le sea proporcionada
+En el navegador entrar a la direccion localhost/index.php
+Listo, ya puede comenzar a hacer las pruebas
